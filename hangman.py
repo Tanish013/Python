@@ -1,7 +1,11 @@
 import random
 import json
+
+
+list_of_words = json.load(open("hangman_word.json"))
+
+
 def hangman():
-    list_of_words = json.load(open("word.json"))
     word = random.choice(list_of_words)
     turns = 10
     validletters = 'abcdefghijklmnopqrstuvwxyz'
